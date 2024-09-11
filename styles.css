@@ -1045,7 +1045,7 @@ footer {
 
     /* Carousel Section */
     .carousel-section {
-        height: 40vh;
+        height: 100vh;
     }
 
     .carousel-content {
@@ -1241,7 +1241,7 @@ footer {
 @media (max-width: 480px) {
     /* For very small screens */
     .carousel-section {
-        height: 30vh;
+        height: 100vh;
     }
 
     .carousel-content {
