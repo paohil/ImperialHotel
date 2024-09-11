@@ -1,0 +1,1298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Header */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    z-index: 1000;
+    transition: background 0.3s;
+}
+
+#header.scrolled {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+#header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+#header nav ul li {
+    margin: 0 15px;
+}
+
+#header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.book-now-btn {
+    padding: 10px 20px;
+    background: #e3b34b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+
+/* First Section: Centered Text with Background Image */
+.hero-ROOMsection {
+    position: relative;
+    width: 100%;
+    height: 50vh; /* Full viewport height */
+    background: url('./images/roomhero.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-EVENTsection {
+    position: relative;
+    width: 100%;
+    height: 50vh; /* Full viewport height */
+    background: url('./images/EVENTHERO.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-DININGsection {
+    position: relative;
+    width: 100%;
+    height: 50vh; /* Full viewport height */
+    background: url('./images/DININGHERO.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-WELLsection {
+    position: relative;
+    width: 100%;
+    height: 50vh; /* Full viewport height */
+    background: url('./images/WELLHERO.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+.hero-content {
+    max-width: 800px;
+    padding: 20px;
+}
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+}
+
+
+
+/* Carousel Section */
+.carousel-section {
+    position: relative;
+    width: 100%;
+    height: 50vh; 
+    background-image: url('images/CP1.jpg'); 
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+  }
+  
+  .carousel-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: larger;
+  }
+
+  
+  .prev-button, .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    display: none;
+  }
+  
+  .prev-button:hover, .next-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .prev-button {
+    left: 1rem;
+  }
+  
+  .next-button {
+    right: 1rem;
+  }
+  
+  .carousel-section:hover .prev-button,
+  .carousel-section:hover .next-button {
+    display: block;
+  }
+  
+
+
+/* Booking Form */
+.booking-form {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0; /* Start hidden */
+    transform: translateY(50px); /* Start off-screen */
+    animation: riseUp 1s forwards; /* Animation */
+}
+
+.booking-form .form-group {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.booking-form .form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.booking-form .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.booking-form button {
+    padding: 10px 20px;
+    background: #e3b34b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.booking-form button:hover {
+    background: #d09e3e;
+}
+
+/* Featured Rooms */
+.featured-rooms {
+    padding: 50px;
+    background-color: #f5f5f5;
+}
+
+.featured-rooms h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+    opacity: 0; /* Start hidden */
+    transform: translateY(50px); /* Start off-screen */
+    animation: riseUp 3s forwards; /* Animation */
+}
+
+@keyframes riseUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.rooms-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.room {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    opacity: 0; /* Start hidden */
+    transform: translateY(50px); /* Start off-screen */
+    animation: riseUp 3s forwards; /* Animation */
+}
+
+.room:hover{
+    background-color: black;
+    color: white;
+}
+
+.room img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.room h3 {
+    margin: 15px 0;
+}
+
+.room p {
+    padding: 0 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+.learn-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #e3b34b;
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.learn-more-btn:hover {
+    background: #d09e3e;
+}
+
+
+/* Deals & Promotions */
+.deals-promotions {
+    background-color: #a87e36;
+    padding: 50px;
+    text-align: center;
+    color: white;
+}
+
+.deals-promotions h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.deals-promotions p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.promo-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.promo-card {
+    width: 30%;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: filter 0.5s ease;
+}
+
+.promo-card:hover {
+    filter: brightness(70%) contrast(120%);
+}
+
+.promo-info {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.featured-offer {
+    margin-top: 20px;
+}
+
+.featured-offer p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.view-offers-btn {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #a87e36;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Welcome Section */
+.welcome-section {
+    background-color: #fff;
+    text-align: center;
+    padding: 50px;
+    color: #a87e36;
+}
+
+.welcome-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.welcome-section p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    font-size: 18px;
+}
+
+.learn-more-btn {
+    padding: 10px 20px;
+    background-color: #a87e36;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+
+/* Signature Elements Section */
+.signature-elements {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #333;
+    padding: 50px;
+    color: white;
+    text-align: center;
+    gap: 3rem;
+    margin-bottom: 50px;
+}
+
+.service-left {
+    grid-column: 1 / 2;
+  }
+
+  .service-image {
+    width: 100%;
+    height: 100%;
+  }
+
+
+.signature-elements h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.signature-list {
+    grid-column: 2 / 3;
+    padding: 5rem 8rem 0;
+    max-width: 800px;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+}
+
+.signature-list li {
+    font-size: 18px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    text-align: left;
+    position: relative;
+}
+
+.signature-list li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #a87e36;
+    font-weight: bold;
+}
+
+/* Meetings & Events Section */
+.event-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #181818;
+    color: white;
+}
+
+.event-section.reverse {
+    flex-direction: row-reverse;
+    background-color: #856c3e; /* color for reverse section */
+}
+
+.text {
+    width: 45%;
+}
+
+.text h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.text h2 {
+    margin-bottom: 20px;
+}
+
+.text p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.text button {
+    background-color: transparent;
+    border: 2px solid #f0e68c;
+    color: #f0e68c;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.text button:hover {
+    background-color: #f0e68c;
+    color: black;
+}
+
+.image {
+    width: 45%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+}
+
+.image:hover {
+    transform: scale(1.1);
+}
+
+/* Latest Blogs Section */
+.latest-blogs {
+    text-align: center;
+    padding: 50px;
+    background-color: #fff;
+}
+
+.latest-blogs h2 {
+    font-size: 32px;
+    color: #a87e36;
+    margin-bottom: 30px;
+}
+
+.blog-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.blog-card {
+    width: 30%;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.blog-card h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.blog-card .date {
+    color: #888;
+    font-size: 14px;
+}
+
+.view-all-blogs-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #a87e36;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Guest Testimonials Section with Parallax */
+.guest-testimonials, .white {
+    background-image: url('./images/testi.png');
+    background-size: cover;
+    background-attachment: fixed; /* Enables the parallax effect */
+    background-position: center;
+    padding: 100px 0;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.testimonial-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.testimonial-content h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.testimonial-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.testimonial {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.testimonial span {
+    display: block;
+    margin-top: 15px;
+    font-style: italic;
+    color: #a87e36;
+}
+
+.see-more-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #a87e36;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* How To Get There Section */
+.location-section-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 20px auto; /* Centers the container */
+    max-width: 900px; /* Sets max width */
+    padding: 20px;
+}
+
+.image-section img {
+    max-width: 700px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.details-section {
+    max-width: 400px;
+    margin-left: 20px;
+}
+
+.details-section h2 {
+    font-size: 24px;
+    color: #8E652F;
+    margin-bottom: 10px;
+}
+
+.details-section p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.details-section p span {
+    font-weight: bold;
+}
+
+iframe {
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+
+
+/* ROOM */
+.roompage-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    max-width: 1000px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.roompage {
+    background-color: white;
+    padding: 20px;
+    width: 45%;
+}
+
+.roompage img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+}
+
+.roompage h2 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.roompage p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.roompage ul {
+    list-style-type: disc; /* Adds bullets */
+    padding-left: 20px;    /* Adds space between bullet and text */
+}
+
+.roompage ul li {
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 0.9em;
+    text-align: left;
+}
+
+.roompage button {
+    background-color: #a38350;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.roompage button:hover {
+    background-color: #8b6e42;
+}
+
+
+/*DINING*/
+.DININGcontainer {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.restaurant-section {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.restaurant-section .content {
+    width: 100%; /* Changed to 50% to occupy half of the section */
+}
+
+.restaurant-section h2, h3, p, button {
+    text-align: left;
+}
+
+.restaurant-section .image {
+    width: 100%;
+    height: auto;
+    display:block;
+    border-radius: 8px;
+}
+
+.restaurant-section .image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display:block;
+    margin-top: 10px;
+}
+
+.DININGcontent h2 {
+    color: #7B3F00;
+    margin-bottom: 10px;
+}
+
+.DININGcontent h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.DININGcontent p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.DININGcontent a {
+    color: #DAA520;
+    text-decoration: none;
+}
+
+.DININGcontent a:hover {
+    text-decoration: underline;
+}
+
+.DININGcontent button {
+    background-color: #DAA520;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.DININGcontent button:hover {
+    background-color: #b18b30;
+}
+
+
+
+
+
+
+.WELLcontainer {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.wellness-section {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.wellness-section .WELLcontent {
+    width: 100%;
+}
+
+.wellness-section .image {
+    width: 100%;
+    height: auto;
+    display:block;
+    border-radius: 8px;
+}
+
+.wellness-section .image img {
+    width: 100%;
+    height: auto;
+    display:block;
+    border-radius: 8px;
+    margin-top:10px;
+}
+
+.WELLcontent h2 {
+    color: #7B3F00;
+    margin-bottom: 10px;
+}
+
+.WELLcontent h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.WELLcontent p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.WELLcontent a {
+    color: #DAA520;
+    text-decoration: none;
+}
+
+.WELLcontent a:hover {
+    text-decoration: underline;
+}
+
+.WELLcontent button {
+    background-color: #DAA520;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.WELLcontent button:hover {
+    background-color: #b18b30;
+}
+
+
+
+
+
+/* Footer */
+footer {
+    background-color: #000000;
+    padding: 50px 20px;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    border-top: 1px solid #ddd;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 20px;
+}
+
+.footer-column h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color:#a87e36;
+}
+
+.footer-column p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.newsletter-form {
+    display: flex;
+    margin-top: 10px;
+}
+
+.newsletter-form input {
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    background-color: #a87e36;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.newsletter-form button:hover {
+    background-color: #333;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    border-top: 1px solid #ddd;
+    font-size: 12px;
+    color: #ffffff;
+    margin-top: 30px;
+}
+
+.footer-bottom-left p {
+    margin: 5px 0;
+    color: #a87e36;
+}
+
+.footer-bottom-right img {
+    width: 40px;
+    height: auto;
+    margin-left: 15px;
+}
+
+
+/* Base styles remain the same */
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    /* Adjust header */
+    #header {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    #header .logo {
+        margin-bottom: 10px;
+    }
+
+    #header nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #header nav ul li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    #header .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: white;
+        margin-left: auto;
+    }
+
+    #header.nav-active ul {
+        display: flex;
+    }
+
+    .book-now-btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    /* Carousel Section */
+    .carousel-section {
+        height: 40vh;
+    }
+
+    .carousel-content {
+        font-size: medium;
+        padding: 0.5rem;
+    }
+
+    /* Featured Rooms */
+    .rooms-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .room img {
+        height: 150px;
+    }
+
+    /* Signature Elements Section */
+    .signature-elements {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .signature-list {
+        padding: 0;
+    }
+
+    /* Event Sections */
+    .event-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .event-section .text,
+    .event-section .image {
+        width: 100%;
+    }
+
+    /* Latest Blogs */
+    .blog-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    /* Testimonials Section */
+    .testimonial-list {
+        grid-template-columns: 1fr;
+    }
+
+    /* Location Section */
+    .location-section-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-section img {
+        width: 100%;
+    }
+
+    .details-section {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Additional adjustments for smaller screens */
+    /* Header adjustments */
+    #header {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    #header .logo {
+        margin-bottom: 10px;
+    }
+
+    #header nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #header nav ul li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    #header .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: white;
+        margin-left: auto;
+    }
+
+    #header.nav-active ul {
+        display: flex;
+    }
+
+    .carousel-section {
+        height: 100vh; /* Occupy more of the screen */
+    }
+
+      /* Carousel Section adjustments for each page */
+      .hero-ROOMsection,
+      .hero-EVENTsection,
+      .hero-DININGsection,
+      .hero-WELLsection {
+          height: 100vh;
+      }
+  
+.white{
+    display: none;
+}
+    .carousel-content {
+        font-size: smaller;
+    }
+
+    .promo-cards{
+        gap:20px;
+    }
+
+   /* Responsive Adjustments for Dining Page */
+   .restaurant-section {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.restaurant-section .image img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Responsive Adjustments for Events Page */
+.event-section {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.event-section .text,
+.event-section .image {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Responsive Adjustments for Rooms Page */
+.roompage-section {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.roompage {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.roompage img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Responsive Adjustments for Wellness Page */
+.wellness-section {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.wellness-section .image img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Disable Parallax and Use Static Image */
+.guest-testimonials,
+.white {
+    background-attachment: scroll;
+    background-position: center center;
+}
+}
+
+@media (max-width: 480px) {
+    /* For very small screens */
+    .carousel-section {
+        height: 30vh;
+    }
+
+    .carousel-content {
+        font-size: x-small;
+    }
+
+    .booking-form {
+        padding: 10px;
+    }
+
+    .booking-form .form-group input {
+        padding: 8px;
+    }
+
+    .featured-rooms {
+        padding: 30px 15px;
+    }
+
+    .rooms-container {
+        gap: 10px;
+    }
+
+    .room img {
+        height: 100px;
+    }
+
+    .event-section {
+        padding: 20px 15px;
+    }
+
+    .latest-blogs {
+        padding: 30px 15px;
+    }
+
+    .testimonial-content h2 {
+        font-size: 24px;
+    }
+
+    .location-section-container {
+        padding: 15px;
+    }
+
+    footer {
+        padding: 30px 15px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-column {
+        margin: 10px 0;
+    }
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imperial Hotel</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <script>
+        // Toggle the dropdown menu
+document.addEventListener('DOMContentLoaded', function () {
+    const header = document.getElementById('header');
+    const menuToggle = document.createElement('div');
+    menuToggle.className = 'menu-toggle';
+    menuToggle.innerHTML = '&#9776;'; // Hamburger icon
+    header.insertBefore(menuToggle, header.firstChild);
+
+    menuToggle.addEventListener('click', function () {
+        header.classList.toggle('nav-active');
+    });
+});
+    </script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="logo">Imperial Hotel</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="wellness.html">Wellness</a></li>
+                <li><a href="dining.html">Dining</a></li>
+                <li><a href="events.html">Events</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="book-now-btn">Book Now</a>
+    </header>
+
+  <!-- Carousel Section -->
+  <section class="hero-WELLsection">
+    <div class="hero-content">
+        <h1>WELLNESS</h1>
+    </div>
+</section>
+
+
+<!-- DINING -->
+<div class="WELLcontainer">
+    <!-- Spa Section -->
+    <div class="wellness-section">
+        <div class="WELLcontent">
+            <h2>Luxury Spa & Rejuvenation</h2>
+            <h3>Serenity Spa</h3>
+            <p>Experience the ultimate relaxation at Serenity Spa in Zenith Hotel, where our expertly trained therapists offer a wide range of treatments including massages, facials, and body scrubs, all designed to refresh and rejuvenate your mind and body.</p>
+            <p><strong>Location:</strong> 3rd Floor, Wellness Wing</p>
+            <p><strong>Operating Schedule:</strong> Daily, 9:00 AM to 9:00 PM</p>
+            <p><strong>Dress Code:</strong> Spa Attire</p>
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+            <p><strong>Email:</strong> serenityspa@imperialhotel.com</p>
+            <button>Reserve Now!</button>
+        </div>
+        <div class="image">
+            <img src="./images/SPA.jpg" alt="Serenity Spa" />
+        </div>
+    </div>
+
+    <!-- Fitness Center Section -->
+    <div class="wellness-section">
+        <div class="WELLcontent">
+            <h2>State-of-the-Art Fitness Center</h2>
+            <h3>Peak Performance Gym</h3>
+            <p>The Peak Performance Gym at Elevation Hotel offers world-class equipment, personal training services, and fitness classes. Whether you’re into cardio, strength training, or yoga, our fitness center provides all you need to stay active and healthy during your stay.</p>
+            <p><strong>Location:</strong> 2nd Floor, Fitness Wing</p>
+            <p><strong>Operating Schedule:</strong> 24/7 Access for Hotel Guests</p>
+            <p><strong>Dress Code:</strong> Athletic Wear</p>
+            <p><strong>Phone:</strong> (321) 654-0987</p>
+            <p><strong>Email:</strong> peakgym@imperialhotel.com</p>
+            <button>Inquire Now!</button>
+        </div>
+        <div class="image">
+            <img src="./images/GYM.jpg" alt="Peak Performance Gym" />
+        </div>
+    </div>
+
+    <!-- Pool Section -->
+    <div class="wellness-section">
+        <div class="WELLcontent">
+            <h2>Infinity Pool & Relaxation Area</h2>
+            <h3>Skyline Infinity Pool</h3>
+            <p>Unwind at the Skyline Infinity Pool in Prestige Hotel, offering stunning views of the ocean and cityscape. Guests can enjoy poolside cabanas, refreshing drinks, and light snacks, making it the perfect place to relax after a day of exploration.</p>
+            <p><strong>Location:</strong> Rooftop, 20th Floor</p>
+            <p><strong>Operating Schedule:</strong> Daily, 7:00 AM to 10:00 PM</p>
+            <p><strong>Dress Code:</strong> Swimwear</p>
+            <p><strong>Phone:</strong> (456) 789-1234</p>
+            <p><strong>Email:</strong> pool@imperialhotel.com</p>
+            <button>Inquire Now!</button>
+        </div>
+        <div class="image">
+            <img src="./images/POOL.jpg" alt="Skyline Infinity Pool" />
+        </div>
+    </div>
+</div>
+
+    
+
+  
+  
+  <!-- Footer Section -->
+ 
+  <footer>
+    <div class="footer-container">
+        <!-- Footer Left (Company Info) -->
+        <div class="footer-column">
+            <h4>IMPERIAL HOTEL</h4>
+        </div>
+
+        <div class="footer-column">
+            <h4>Site Navigation</h4>
+            <ul>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="wellness.html">Wellness</a></li>
+                <li><a href="dining.html">Dining</a></li>
+                <li><a href="events.html">Events</a></li>
+            </ul>
+        </div>
+
+        <!-- Footer Right (Newsletter) -->
+        <div class="footer-column">
+            <h4>SIGN UP TO NEWSLETTER</h4>
+            <p>Enter your email address to get $10 off your first booking. Updates information on Sales and Offers.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email...">
+                <button type="submit">SUBSCRIBE</button>
+            </form>
+        </div>
+        <div class="footer-column">
+            <h4>Get In Touch</h4>
+            <p>268 St. South New York/NY 98944, United States.<br><br>
+            +222-1800-2628<br><br>
+            imperialhotel@gmail.com</p>
+        </div>
+
+    </div>
+
+    <!-- Footer Bottom (Legal & Payment) -->
+    <div class="footer-bottom">
+        <div class="footer-bottom-left">
+            <p>&copy; 2024 IMPERIAL HOTEL. All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

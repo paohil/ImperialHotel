@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imperial Hotel</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <script>
+        // Toggle the dropdown menu
+document.addEventListener('DOMContentLoaded', function () {
+    const header = document.getElementById('header');
+    const menuToggle = document.createElement('div');
+    menuToggle.className = 'menu-toggle';
+    menuToggle.innerHTML = '&#9776;'; // Hamburger icon
+    header.insertBefore(menuToggle, header.firstChild);
+
+    menuToggle.addEventListener('click', function () {
+        header.classList.toggle('nav-active');
+    });
+});
+    </script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="logo">Imperial Hotel</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="wellness.html">Wellness</a></li>
+                <li><a href="dining.html">Dining</a></li>
+                <li><a href="events.html">Events</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="book-now-btn">Book Now</a>
+    </header>
+
+  <!-- Carousel Section -->
+  <section class="hero-DININGsection">
+    <div class="hero-content">
+        <h1>DINING</h1>
+    </div>
+</section>
+
+
+
+<!-- ANNOUNCEMENT -->
+<section class="welcome-section">
+    <h2>Indulge in an exciting gastronomic
+        escapade at Imperial Hotel!</h2>
+    <p>
+        Enjoy exquisite meals and drinks from a myriad of menu choices at any of our food outlets. Allow us to take you to a satisfying unique dining experience at Imperial Hotel.
+    </p>
+
+</section>
+
+
+
+    <!-- DINING -->
+<div class="DININGcontainer">
+    <!-- Section 1 -->
+    <div class="restaurant-section">
+        <div class="DININGcontent">
+            <h2>Skyline Dining & Signature Cocktails</h2>
+            <h3>The Horizon Lounge</h3>
+            <p>Located on the 50th floor of Zenith Hotel, The Horizon Lounge offers unparalleled views of the city skyline. Known for its innovative cocktails and gourmet tapas, this destination is the perfect blend of luxury and comfort.</p>
+            <p><strong>Location:</strong> 50th Floor (Sky Deck)</p>
+            <p><strong>Operating Schedule:</strong> Daily, 4:00 PM to 1:00 AM</p>
+            <p><strong>Dress Code:</strong> Business Casual</p>
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+            <p><strong>Email:</strong> horizonlounge@zenithhotel.com</p>
+            <button>View Menu</button>
+        </div>
+        <div class="image">
+            <img src="./images/SKY.webp" alt="The Horizon Lounge" />
+        </div>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="restaurant-section">
+        <div class="DININGcontent">
+            <h2>Rooftop Bar & Fusion Cuisine</h2>
+            <h3>Starlight Terrace</h3>
+            <p>Starlight Terrace at Elevation Hotel is the place to be for fine fusion dining under the stars. Experience a diverse menu that merges traditional flavors with modern twists, all while enjoying panoramic views of the ocean.</p>
+            <p><strong>Location:</strong> Roof Deck</p>
+            <p><strong>Operating Schedule:</strong> 6:00 PM to 2:00 AM</p>
+            <p><strong>Dress Code:</strong> Smart Casual</p>
+            <p><strong>Phone:</strong> (321) 654-0987</p>
+            <p><strong>Email:</strong> starlight@elevationhotel.com</p>
+            <button>View Menu</button>
+        </div>
+        <div class="image">
+            <img src="./images/STAR.jpg" alt="Starlight Terrace" />
+        </div>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="restaurant-section">
+        <div class="DININGcontent">
+            <h2>Exclusive Dining & Premium Wine Selection</h2>
+            <h3>Vineyard Bistro</h3>
+            <p>At Vineyard Bistro in Prestige Hotel, indulge in a curated selection of the finest wines and dishes crafted with locally sourced ingredients. Our award-winning chefs and sommeliers ensure an unforgettable gastronomic experience.</p>
+            <p><strong>Location:</strong> Garden Level</p>
+            <p><strong>Operating Schedule:</strong> Daily, 12:00 PM to 11:00 PM</p>
+            <p><strong>Dress Code:</strong> Formal</p>
+            <p><strong>Phone:</strong> (456) 789-1234</p>
+            <p><strong>Email:</strong> vineyard@prestigehotel.com</p>
+            <button>View Menu</button>
+        </div>
+        <div class="image">
+            <img src="./images/WINE.jpg" alt="Vineyard Bistro" />
+        </div>
+    </div>
+</div>
+
+  
+  
+  <!-- Footer Section -->
+ 
+  <footer>
+    <div class="footer-container">
+        <!-- Footer Left (Company Info) -->
+        <div class="footer-column">
+            <h4>IMPERIAL HOTEL</h4>
+        </div>
+
+        <div class="footer-column">
+            <h4>Site Navigation</h4>
+            <ul>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="wellness.html">Wellness</a></li>
+                <li><a href="dining.html">Dining</a></li>
+                <li><a href="events.html">Events</a></li>
+            </ul>
+        </div>
+
+        <!-- Footer Right (Newsletter) -->
+        <div class="footer-column">
+            <h4>SIGN UP TO NEWSLETTER</h4>
+            <p>Enter your email address to get $10 off your first booking. Updates information on Sales and Offers.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email...">
+                <button type="submit">SUBSCRIBE</button>
+            </form>
+        </div>
+        <div class="footer-column">
+            <h4>Get In Touch</h4>
+            <p>268 St. South New York/NY 98944, United States.<br><br>
+            +222-1800-2628<br><br>
+            imperialhotel@gmail.com</p>
+        </div>
+
+    </div>
+
+    <!-- Footer Bottom (Legal & Payment) -->
+    <div class="footer-bottom">
+        <div class="footer-bottom-left">
+            <p>&copy; 2024 IMPERIAL HOTEL. All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

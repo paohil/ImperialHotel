@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imperial Hotel</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="logo">Imperial Hotel</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="wellness.html">Wellness</a></li>
+                <li><a href="dining.html">Dining</a></li>
+                <li><a href="events.html">Events</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="book-now-btn">Book Now</a>
+    </header>
+
+  <!-- Carousel Section -->
+  <section id="home" class="carousel-section">
+    <div class="carousel-content">
+        <h1>The Premier Experience</h1>
+        <p>Affordable Modern Luxury in the Vibrant Expanse of The Metro</p>
+    </div>
+
+     <!-- Navigation Buttons -->
+     <button class="prev-button">&#10094;</button>
+     <button class="next-button">&#10095;</button>
+
+        <!-- Booking Form -->
+        <div class="booking-form">
+            <form>
+                <div class="form-group">
+                    <label for="checkin">Check-In Date</label>
+                    <input type="date" id="checkin" name="checkin">
+                </div>
+                <div class="form-group">
+                    <label for="checkout">Check-Out Date</label>
+                    <input type="date" id="checkout" name="checkout">
+                </div>
+                <div class="form-group">
+                    <label for="adults">Adults</label>
+                    <input type="number" id="adults" name="adults" min="1" value="1">
+                </div>
+                <button type="submit">Search Availability</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Featured Rooms Section -->
+    <section class="featured-rooms">
+        <h2>Featured Rooms</h2>
+        <div class="rooms-container">
+            <div class="room">
+                <img src="./images/studio.png" alt="Classic Studio">
+                <h3>Classic Studio</h3>
+                <p>An enchanting and intimate space designed with your utmost comfort in mind.</p>
+                <a href="#" class="learn-more-btn">Learn More</a>
+            </div>
+            <div class="room">
+                <img src="./images/indulgence.jpg" alt="Indulgence">
+                <h3>Indulgence</h3>
+                <p>Take business and pleasure to the next level. A stay in this room makes for an indulgent experience.</p>
+                <a href="#" class="learn-more-btn">Learn More</a>
+            </div>
+            <div class="room">
+                <img src="./images/exec.jpg" alt="Executive Prestige">
+                <h3>Executive Prestige</h3>
+                <p>The option caters to discerning travelers who require a spacious abode for meetings or contemplation.</p>
+                <a href="#" class="learn-more-btn">Learn More</a>
+            </div>
+            <div class="room">
+                <img src="./images/exec2.webp" alt="Prestige">
+                <h3>Prestige</h3>
+                <p>Bath time bliss with unparalleled city views. Each guest will have ample personal space.</p>
+                <a href="#" class="learn-more-btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deals & Promotions Section -->
+<section class="deals-promotions">
+    <h2>Deals & Promotions</h2>
+    <p>Check out our latest promo offers on rooms, spa, dining, and more!</p>
+    
+    <div class="promo-cards">
+        <div class="promo-card" style="background-image: url('./images/concert.jpg');">
+            <div class="promo-info">
+                <span>Concerts at Imperial Hotel</span>
+            </div>
+        </div>
+        <div class="promo-card" style="background-image: url('./images/berd.jpg');">
+            <div class="promo-info">
+                <span>Octoberfest</span>
+            </div>
+        </div>
+        <div class="promo-card" style="background-image: url('./images/dining.jpg');">
+            <div class="promo-info">
+                <span>Eat-all-you-can!</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="featured-offer">
+        <p>Featured Offer: Be it a night out with your special someone or a weekend getaway with the family, Imperial Hotel is making sure that you are well-equipped for your vacation with our collection of well-curated staycation packages.</p>
+    </div>
+</section>
+
+
+
+ <!-- SIGNATURE Section -->
+
+ <section class="event-section">
+    <div class="image" style="background-image: url('./images/01.webp');"></div>
+    <div class="text">
+        <h2>6 Signature Elements Define Our Property</h2>
+    <ul class="signature-list">
+        <li>Thoughtful and Modern Dining Options</li>
+        <li>Infinity Pool</li>
+        <li>Modern interactive Architecture, Room Design and Commissioned Art</li>
+        <li>Imperial Club Lounge</li>
+        <li>World-Class Wellness Spa</li>
+        <li>State-of-the-Art Fitness & Recreation Center</li>
+    </ul>
+    </div>
+    
+</section>
+
+<!-- WHITE -->
+<section class="white"></section>
+
+
+<!-- Meetings & Events Section -->
+<section class="event-section">
+    <div class="text">
+        <h1>Meetings & Events</h1>
+        <p>Our venue spaces and packages are versatile and can be customized to cater to every milestone in your life, whether it's a convention, conference, or corporate event.</p>
+        <button>See Details</button>
+    </div>
+    <div class="image" style="background-image: url('./images/meet.jpg');"></div>
+</section>
+
+<section class="event-section reverse">
+    <div class="text">
+        <h1>Weddings & Celebrations</h1>
+        <p>Imperial Hotel understands the importance of making your most awaited day as special as possible, and you can trust us to make sure that your picture-perfect wedding dreams become a reality.</p>
+        <button>See Details</button>
+    </div>
+    <div class="image" style="background-image: url('./images/wedding.jpg');"></div>
+</section>
+
+<section class="event-section">
+    <div class="text">
+        <h1>Special Occasions</h1>
+        <p>We understand the stress that comes with planning an important event. Imperial Hotel's state-of-the-art facilities, unique spaces, and impeccable service will transform your vision into reality.</p>
+        <button>See Details</button>
+    </div>
+    <div class="image" style="background-image: url('./images/special.jpg');"></div>
+</section>
+
+<!-- WHITE -->
+<section class="white"></section>
+
+<!-- Latest Blogs Section -->
+<section class="latest-blogs">
+    <h2>Latest News</h2>
+    <div class="blog-cards">
+        <div class="blog-card">
+            <img src="./images/blog1.png" alt="Blog 1">
+            <h3>Imperial Hotel Wins TripAdvisor Traveler’s Choice Award 2024</h3>
+            <p class="date">July 3, 2024</p>
+        </div>
+        <div class="blog-card">
+            <img src="./images/blog2.webp" alt="Blog 2">
+            <h3>Imperial Hotel Earns Prestigious Great Place to Work® Certification™</h3>
+            <p class="date">June 5, 2024</p>
+        </div>
+        <div class="blog-card">
+            <img src="./images/blog3.jpg" alt="Blog 3">
+            <h3>Imperial Hotel Unveils Two Exciting F&B Destinations</h3>
+            <p class="date">April 24, 2024</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- Guest Testimonials Section with Parallax -->
+<section class="guest-testimonials">
+    <div class="testimonial-content">
+        <h2>Guest Testimonials</h2>
+        <div class="testimonial-list">
+            <div class="testimonial">
+                <p>“Our family had a great time staying at I'M Hotel. The facilities and amenities are top-notch, and the service is outstanding. The infinity pool is a must-see, and we highly recommend the Onsen Spa!”</p>
+                <span>- Giselle M., TripAdvisor</span>
+            </div>
+            <div class="testimonial">
+                <p>“I had a great time with a last-minute getaway. The room was so luxurious and comfortable, perfect for relaxation. The staff were courteous and helpful, and the Onsen Spa was amazing!”</p>
+                <span>- Ivan N., Facebook</span>
+            </div>
+            <div class="testimonial">
+                <p>“My favorite hotel in the city. Amazing amenities, helpful staff, and the infinity pool with the skyline views is something else! Will be back soon!”</p>
+                <span>- Gloria R., Google</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="location-section-container">
+        <div class="image-section">
+            <img src="./images/entrance.jpg" alt="Entrance">
+        </div>
+        <div class="details-section">
+            <h2>How To Get There</h2>
+            <p>Somewhere in the Metro 1234</p>
+            <p>(+123) 4567 8910</p>
+            <p>info@imperialhotel.com | reservations@imperialhotel.com</p>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1930.1972610428943!2d121.02737398374541!3d14.56392412615701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c90dfe407c77%3A0x3f68a015e9b0c60a!2sI'M%20Hotel!5e0!3m2!1sen!2sph!4v1694330973939!5m2!1sen!2sph" 
+                width="300" 
+                height="200" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+
+
+
+  
+  <!-- Footer Section -->
+ 
+  <footer>
+    <div class="footer-container">
+        <!-- Footer Left (Company Info) -->
+        <div class="footer-column">
+            <h4>IMPERIAL HOTEL</h4>
+        </div>
+
+        <div class="footer-column">
+            <h4>Site Navigation</h4>
+            <ul>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="wellness.html">Wellness</a></li>
+                <li><a href="dining.html">Dining</a></li>
+                <li><a href="events.html">Events</a></li>
+            </ul>
+        </div>
+
+        <!-- Footer Right (Newsletter) -->
+        <div class="footer-column">
+            <h4>SIGN UP TO NEWSLETTER</h4>
+            <p>Enter your email address to get $10 off your first booking. Updates information on Sales and Offers.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email...">
+                <button type="submit">SUBSCRIBE</button>
+            </form>
+        </div>
+        <div class="footer-column">
+            <h4>Get In Touch</h4>
+            <p>268 St. South New York/NY 98944, United States.<br><br>
+            +222-1800-2628<br><br>
+            imperialhotel@gmail.com</p>
+        </div>
+
+    </div>
+
+    <!-- Footer Bottom (Legal & Payment) -->
+    <div class="footer-bottom">
+        <div class="footer-bottom-left">
+            <p>&copy; 2024 IMPERIAL HOTEL. All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

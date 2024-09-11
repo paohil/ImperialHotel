@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imperial Hotel</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <script>
+        // Toggle the dropdown menu
+document.addEventListener('DOMContentLoaded', function () {
+    const header = document.getElementById('header');
+    const menuToggle = document.createElement('div');
+    menuToggle.className = 'menu-toggle';
+    menuToggle.innerHTML = '&#9776;'; // Hamburger icon
+    header.insertBefore(menuToggle, header.firstChild);
+
+    menuToggle.addEventListener('click', function () {
+        header.classList.toggle('nav-active');
+    });
+});
+    </script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="logo">Imperial Hotel</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="wellness.html">Wellness</a></li>
+                <li><a href="dining.html">Dining</a></li>
+                <li><a href="events.html">Events</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="book-now-btn">Book Now</a>
+    </header>
+
+  <!-- Carousel Section -->
+  <section class="hero-EVENTsection">
+    <div class="hero-content">
+        <h1>EVENTS AND OCCASSIONS</h1>
+    </div>
+</section>
+
+
+
+<!-- ANNOUNCEMENT -->
+<section class="welcome-section">
+    <h2>Start planning your event here!</h2>
+    <p>
+        Allow us to take the hassle out of your upcoming event.
+        Book with us and our team of experts will work with you to determine the perfect space and package to suit your requirements.
+    </p>
+
+</section>
+
+
+
+    
+<!-- Meetings & Events Section -->
+<section class="event-section">
+    <div class="text">
+        <h1>Meetings & Events</h1>
+        <p>Our venue spaces and packages are versatile and can be customized to cater to every milestone in your life, whether it's a convention, conference, or corporate event.</p>
+        <button>Book Now!</button>
+    </div>
+    <div class="image" style="background-image: url('./images/meet.jpg');"></div>
+</section>
+
+<section class="event-section reverse">
+    <div class="text">
+        <h1>Weddings & Celebrations</h1>
+        <p>Imperial Hotel understands the importance of making your most awaited day as special as possible, and you can trust us to make sure that your picture-perfect wedding dreams become a reality.</p>
+        <button>Book Now!</button>
+    </div>
+    <div class="image" style="background-image: url('./images/wedding.jpg');"></div>
+</section>
+
+<section class="event-section">
+    <div class="text">
+        <h1>Special Occasions</h1>
+        <p>We understand the stress that comes with planning an important event. Imperial Hotel's state-of-the-art facilities, unique spaces, and impeccable service will transform your vision into reality.</p>
+        <button>Book Now!</button>
+    </div>
+    <div class="image" style="background-image: url('./images/special.jpg');"></div>
+</section>
+
+
+  
+  
+  <!-- Footer Section -->
+ 
+  <footer>
+    <div class="footer-container">
+        <!-- Footer Left (Company Info) -->
+        <div class="footer-column">
+            <h4>IMPERIAL HOTEL</h4>
+        </div>
+
+        <div class="footer-column">
+            <h4>Site Navigation</h4>
+            <ul>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="wellness.html">Wellness</a></li>
+                <li><a href="dining.html">Dining</a></li>
+                <li><a href="events.html">Events</a></li>
+            </ul>
+        </div>
+
+        <!-- Footer Right (Newsletter) -->
+        <div class="footer-column">
+            <h4>SIGN UP TO NEWSLETTER</h4>
+            <p>Enter your email address to get $10 off your first booking. Updates information on Sales and Offers.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email...">
+                <button type="submit">SUBSCRIBE</button>
+            </form>
+        </div>
+        <div class="footer-column">
+            <h4>Get In Touch</h4>
+            <p>268 St. South New York/NY 98944, United States.<br><br>
+            +222-1800-2628<br><br>
+            imperialhotel@gmail.com</p>
+        </div>
+
+    </div>
+
+    <!-- Footer Bottom (Legal & Payment) -->
+    <div class="footer-bottom">
+        <div class="footer-bottom-left">
+            <p>&copy; 2024 IMPERIAL HOTEL. All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

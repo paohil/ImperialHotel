@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imperial Hotel</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <script>
+        // Toggle the dropdown menu
+document.addEventListener('DOMContentLoaded', function () {
+    const header = document.getElementById('header');
+    const menuToggle = document.createElement('div');
+    menuToggle.className = 'menu-toggle';
+    menuToggle.innerHTML = '&#9776;'; // Hamburger icon
+    header.insertBefore(menuToggle, header.firstChild);
+
+    menuToggle.addEventListener('click', function () {
+        header.classList.toggle('nav-active');
+    });
+});
+    </script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="logo">Imperial Hotel</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="wellness.html">Wellness</a></li>
+                <li><a href="dining.html">Dining</a></li>
+                <li><a href="events.html">Events</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="book-now-btn">Book Now</a>
+    </header>
+
+<!-- First Section: Centered Text with Background Image -->
+<section class="hero-ROOMsection">
+    <div class="hero-content">
+        <h1>ROOMS AND SUITES</h1>
+    </div>
+</section>
+
+
+
+<!-- ANNOUNCEMENT -->
+<section class="welcome-section">
+    <h2>Affordable Modern Luxury and Comfort!</h2>
+    <p>
+        The hotel features 284 spacious guestrooms, including suites equipped with an Electrolux-fitted kitchenette, living room, and dining area. Choose from a range of rooms & suites that will all give you a great experience.
+    </p>
+
+</section>
+
+
+
+    
+<!-- ROOM -->
+<div class="roompage-section">
+    <div class="roompage">
+        <img src="./images/studio.png" alt="Classic Studio">
+        <h2>Classic Studio</h2>
+        <p>Beds: 1 King</p>
+        <p>No. of Pax: 2</p>
+        <p>Recommended for Solo</p>
+        <ul>
+            <li>49" Smart HDTV</li>
+            <li>Coffee and Tea making facilities</li>
+            <li>Free Access to IM Onsen Spa facilities when you Book Direct!</li>
+            <li>Luxury German Rainshower</li>
+            <li>Safe</li>
+            <li>IDD/NDD Phone with Smartphone Dock and Bluetooth Speakers</li>
+            <li>WiFi</li>
+            <li>Personal Study</li>
+        </ul>
+        <button>Check Availability</button>
+    </div>
+
+    <div class="roompage">
+        <img src="./images/indulgence.jpg" alt="Indulgence Room">
+        <h2>Indulgence</h2>
+        <p>Beds: 1 King</p>
+        <p>No. of Pax: 2</p>
+        <p>Recommended for Couples</p>
+        <ul>
+            <li>49" Smart HDTV</li>
+            <li>Coffee and Tea making facilities</li>
+            <li>Free Access to IM Onsen Spa facilities when you Book Direct!</li>
+            <li>Luxury German Rainshower</li>
+            <li>Safe</li>
+            <li>IDD/NDD Phone with Smartphone Dock and Bluetooth Speakers</li>
+            <li>WiFi</li>
+            <li>Personal Study</li>
+        </ul>
+        <button>Check Availability</button>
+    </div>
+</div>
+
+<div class="roompage-section">
+    <div class="roompage">
+        <img src="./images/exec.jpg" alt="Executive Prestige Room">
+        <h2>Executive Prestige</h2>
+        <p>Beds: 1 King</p>
+        <p>No. of Pax: 2</p>
+        <p>Best for Business Travellers</p>
+        <ul>
+            <li>49" Smart HDTV</li>
+            <li>Bath Tub</li>
+            <li>Coffee and Tea making facilities</li>
+            <li>Free Access to IM Onsen Spa facilities when you Book Direct!</li>
+            <li>Luxury German Rainshower</li>
+            <li>Safe</li>
+            <li>IDD/NDD Phone with Smartphone Dock and Bluetooth Speakers</li>
+            <li>WiFi</li>
+            <li>Personal Study</li>
+        </ul>
+        <button>Check Availability</button>
+    </div>
+
+    <div class="roompage">
+        <img src="./images/exec2.webp" alt="Prestige Room">
+        <h2>Prestige</h2>
+        <p>Beds: 2 Queen</p>
+        <p>No. of Pax: 2</p>
+        <p>Recommended for Families</p>
+        <ul>
+            <li>49" Smart HDTV</li>
+            <li>Bath Tub</li>
+            <li>Coffee and Tea making facilities</li>
+            <li>Free Access to IM Onsen Spa facilities when you Book Direct!</li>
+            <li>Luxury German Rainshower</li>
+            <li>Safe</li>
+            <li>IDD/NDD Phone with Smartphone Dock and Bluetooth Speakers</li>
+            <li>WiFi</li>
+            <li>Personal Study</li>
+        </ul>
+        <button>Check Availability</button>
+    </div>
+</div>
+
+  <!-- Footer Section -->
+  
+  <!-- Footer Section -->
+ 
+  <footer>
+    <div class="footer-container">
+        <!-- Footer Left (Company Info) -->
+        <div class="footer-column">
+            <h4>IMPERIAL HOTEL</h4>
+        </div>
+
+        <div class="footer-column">
+            <h4>Site Navigation</h4>
+            <ul>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="wellness.html">Wellness</a></li>
+                <li><a href="dining.html">Dining</a></li>
+                <li><a href="events.html">Events</a></li>
+            </ul>
+        </div>
+
+        <!-- Footer Right (Newsletter) -->
+        <div class="footer-column">
+            <h4>SIGN UP TO NEWSLETTER</h4>
+            <p>Enter your email address to get $10 off your first booking. Updates information on Sales and Offers.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email...">
+                <button type="submit">SUBSCRIBE</button>
+            </form>
+        </div>
+        <div class="footer-column">
+            <h4>Get In Touch</h4>
+            <p>268 St. South New York/NY 98944, United States.<br><br>
+            +222-1800-2628<br><br>
+            imperialhotel@gmail.com</p>
+        </div>
+
+    </div>
+
+    <!-- Footer Bottom (Legal & Payment) -->
+    <div class="footer-bottom">
+        <div class="footer-bottom-left">
+            <p>&copy; 2024 IMPERIAL HOTEL. All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
