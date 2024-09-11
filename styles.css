@@ -1240,6 +1240,21 @@ footer {
     background-attachment: scroll;
     background-position: center center;
 }
+    .deals-promotions h2 {
+    font-size: 24px;
+}
+
+.deals-promotions p {
+    font-size: 16px;
+}
+
+.promo-card {
+    height: 150px;
+}
+
+.promo-info {
+    padding: 10px;
+}
 }
 
 @media (max-width: 480px) {
