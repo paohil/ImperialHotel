@@ -1245,55 +1245,122 @@ footer {
         height: 70vh;
     }
 
-    .carousel-content {
-        font-size: x-small;
-    }
-
-    .booking-form {
+   /* Additional adjustments for smaller screens */
+    /* Header adjustments */
+    #header {
         padding: 10px;
-    }
-
-    .booking-form .form-group input {
-        padding: 8px;
-    }
-
-    .featured-rooms {
-        padding: 30px 15px;
-    }
-
-    .rooms-container {
-        gap: 10px;
-    }
-
-    .room img {
-        height: 100px;
-    }
-
-    .event-section {
-        padding: 20px 15px;
-    }
-
-    .latest-blogs {
-        padding: 30px 15px;
-    }
-
-    .testimonial-content h2 {
-        font-size: 24px;
-    }
-
-    .location-section-container {
-        padding: 15px;
-    }
-
-    footer {
-        padding: 30px 15px;
-    }
-
-    .footer-container {
         flex-direction: column;
     }
 
-    .footer-column {
+    #header .logo {
+        margin-bottom: 10px;
+    }
+
+    #header nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #header nav ul li {
+        text-align: center;
         margin: 10px 0;
     }
+
+    #header .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: white;
+        margin-left: auto;
+    }
+
+    #header.nav-active ul {
+        display: flex;
+    }
+
+
+
+      /* Carousel Section adjustments for each page */
+      .hero-ROOMsection,
+      .hero-EVENTsection,
+      .hero-DININGsection,
+      .hero-WELLsection {
+          height: 70vh;
+      }
+  
+.white{
+    display: none;
+}
+    .carousel-content {
+        font-size: medium;
+    }
+
+    .promo-cards{
+        gap:20px;
+    }
+
+   /* Responsive Adjustments for Dining Page */
+   .restaurant-section {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.restaurant-section .image img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Responsive Adjustments for Events Page */
+.event-section {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.event-section .text,
+.event-section .image {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Responsive Adjustments for Rooms Page */
+.roompage-section {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.roompage {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.roompage img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Responsive Adjustments for Wellness Page */
+.wellness-section {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.wellness-section .image img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Disable Parallax and Use Static Image */
+.guest-testimonials,
+.white {
+    background-attachment: scroll;
+    background-position: center center;
+}
 }
